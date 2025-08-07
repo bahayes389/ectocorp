@@ -1,0 +1,49 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseHead />
+<Header />
+
+<main class="container">
+  <h2>Human Resources</h2>
+  <div style="background-color: #fff8c6; border: 1px solid #999; padding: 10px; margin-bottom: 20px; font-size: 14px;">
+    ⚠️ Access to restricted departments without clearance is a violation of Section 8-B of the Conduct Agreement. Proceed with authorization only.
+  </div>
+
+  <form style="margin-bottom: 20px;">
+    <label for="directory-search"><b>Search Employee Directory:</b></label><br />
+    <input type="text" id="directory-search" name="directory-search" placeholder="Enter employee name..." size="30" disabled style="margin-top: 5px;">
+    <p style="font-size: 10px; color: gray;">* Directory Search is currently offline pending compliance upgrade.</p>
+  </form>
+
+  <p>
+    The Human Resources Department ensures proper compliance with company conduct guidelines, emotional tone, and behavior modulation. They are responsible for onboarding, disciplinary review, and loyalty alignment.
+  </p>
+  <p><b>Department Head:</b> Chief Human Resources Officer</p>
+  <p><b>Key Initiatives:</b></p>
+  <ul>
+    <li>Routine morale assessments</li>
+    <li>Mandatory seminars: "Optimizing Output Through Enthusiasm"</li>
+    <li>Internal grievance compression unit (IGCU)</li>
+  </ul>
+  <p style="margin-top: 20px; font-size: 12px; color: gray;">
+    Last reviewed: 1999.3.4 · Only cleared employees may request offboarding forms.
+  </p>
+
+  <hr />
+  <p><b>Navigate to Other Departments:</b></p>
+  <ul>
+    <li><a href="/departments/legal">The Legal Department</a></li>
+    <li><a href="/departments/temporal">Department of Temporal Investigations</a></li>
+    <li><a href="/departments/nutrition">Consumer Nutritional Division</a></li>
+    <li><a href="/departments/housing">Infrastructure & Housing Authority</a></li>
+    <li><a href="/departments/media">Broadcast & Messaging Bureau</a></li>
+    <li><a href="/departments/external">Department of External Affairs</a></li>
+    <li><a href="/departments/productivity">Human Productivity Division</a></li>
+  </ul>
+</main>
+
+<Footer />
