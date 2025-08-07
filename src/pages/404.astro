@@ -1,0 +1,47 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <BaseHead />
+  <body>
+    <Header />
+
+    <main class="container" style="text-align: center;">
+      <img src="/assets/logo.gif" alt="EctoCorp Logo" width="120" />
+
+      <h1>Error 1999.404 – Page Not Found</h1>
+
+      <p>
+        The document you were attempting to access is not available in this timeline.<br />
+        It may have been reassigned, offboarded, or flagged for review by the Department of Temporal Investigations.
+      </p>
+
+      <blockquote>
+        <em>“This page does not exist in your assigned memory space.”</em>
+      </blockquote>
+
+      <p>
+        Please return to an approved page before escalation procedures are triggered.
+      </p>
+
+      <ul style="list-style-type: none; padding: 0;">
+        <li><a href="/">🏠 Return to Intranet Home</a></li>
+        <li><a href="/compliance">📄 Review Compliance Guidelines</a></li>
+        <li><a href="/products">📦 Visit the Product Catalog</a></li>
+      </ul>
+
+      <hr />
+
+      <p style="color: gray; font-size: 12px;">
+        Incident Code: <code>#ECTO-404-MIDNIGHT</code><br />
+        Logged and time-stamped for internal auditing.
+      </p>
+    </main>
+
+    <Footer />
+  </body>
+</html>
