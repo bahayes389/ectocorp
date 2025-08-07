@@ -7,44 +7,61 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>EctoCorp – Official Site</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ee" vlink="#551a8b" alink="#ff0000">
+    <center>
+      <img src="/logo.gif" alt="EctoCorp Logo" width="300" />
+      <h1>
+        <marquee behavior="scroll" direction="left">
+          Welcome to EctoCorp™ | Serving Your Future Since 1999.1
+        </marquee>
+      </h1>
+    </center>
+
+    <table width="900" align="center" border="1" cellspacing="0" cellpadding="10">
+      <tr>
+        <!-- Sidebar Navigation -->
+        <td width="200" valign="top" bgcolor="#dcdcdc">
+          <font face="Verdana, Arial" size="2">
+            <b>Navigation</b><br />
+            <hr />
+            <a href="/">Home</a><br />
+            <a href="/products">Product Catalog</a><br />
+            <a href="/departments">Departments</a><br />
+            <a href="/news">EctoCorp News</a><br />
+            <a href="/careers">Join Our Team</a><br />
+            <a href="/compliance">Compliance</a><br />
+            <a href="/contact">Contact Us</a><br />
+          </font>
+        </td>
+
+        <!-- Main Content -->
+        <td valign="top">
+          <font face="Verdana, Arial" size="2">
+            <h2>About EctoCorp</h2>
+            <p>
+              EctoCorp is your trusted provider of post-Y2K solutions. From nutrition units to digital governance,
+              we are committed to bringing you perpetual innovation — even if the clock never strikes midnight.
+            </p>
+            <h3>Featured Announcement:</h3>
+            <ul>
+              <li><b>New Meal Units Available</b> – Now with government-approved flavoring</li>
+              <li><b>Compliance Reminder</b> – All citizens must update ID badges before 1999.4</li>
+              <li><b>Department of Temporal Investigations</b> – Welcoming new recruits</li>
+            </ul>
+          </font>
+        </td>
+      </tr>
+    </table>
+
+    <center>
+      <font face="Courier New" size="1">
+        <p>© EctoCorp™ 1999.∞ | All Rights Reserved | Do Not Question the Time</p>
+      </font>
+    </center>
+  </body>
 </html>
