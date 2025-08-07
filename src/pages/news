@@ -1,0 +1,56 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseHead />
+<Header />
+
+<main class="container">
+  <div style="background-color: #003366; color: white; padding: 15px; text-align: center; font-family: 'Verdana', sans-serif;">
+    <h1 style="margin: 0; font-size: 28px; letter-spacing: 1px;">EctoCorp News</h1>
+    <p style="margin: 5px 0 0 0; font-size: 14px;">A Service of the Broadcast & Messaging Bureau</p>
+    <p style="font-size: 10px; color: #ccc;">Fiscal Year 1999.∞ • All News is Final</p>
+  </div>
+
+  <section style="margin-top: 30px; font-family: 'Verdana', sans-serif;">
+    <article style="border-top: 2px solid #cccccc; padding-top: 20px;">
+      <h3>Annual Morale Recalibration Week Begins</h3>
+      <p><b>Date:</b> 1999.3.5</p>
+      <p>
+        Enthusiasm levels have dipped below optimal thresholds. EctoCorp’s Morale Task Unit urges all employees to report to their assigned Inspiration Stations. Prizes will be distributed to those demonstrating exceptional cheer compliance.
+      </p>
+    </article>
+
+    <article style="border-top: 2px solid #cccccc; padding-top: 20px;">
+      <h3>Unauthorized Midnight Sightings Reported</h3>
+      <p><b>Date:</b> 1999.3.2</p>
+      <p>
+        A small number of citizens have allegedly viewed clocks reading "12:00 AM." Investigations are underway. Remember: the correct time is always 11:59 PM. Any deviation should be reported immediately to the Department of Temporal Investigations.
+      </p>
+    </article>
+
+    <article style="border-top: 2px solid #cccccc; padding-top: 20px;">
+      <h3>All Markets Declared Stable (Again)</h3>
+      <p><b>Date:</b> 1999.3.0</p>
+      <p>
+        The Department of External Affairs has assured the public that markets are functioning precisely as planned. Ration coupon fluctuations are a natural part of our self-correcting economy. Please remain in your economic pod.
+      </p>
+    </article>
+
+    <article style="border-top: 2px solid #cccccc; padding-top: 20px;">
+      <h3>New Beverage Approved: Caffex+ (Compliance Grade)</h3>
+      <p><b>Date:</b> 1999.2.8</p>
+      <p>
+        Caffex+ has passed all safety simulations and is now the recommended caffeinated supplement for all third-shift work blocks. Side effects include loyalty reinforcement and mild euphoria.
+      </p>
+    </article>
+  </section>
+
+  <p style="margin-top: 40px; font-size: 12px; color: gray; font-family: 'Verdana', sans-serif;">
+    For older articles, please visit the Broadcast Archives Terminal (badge clearance required).
+  </p>
+</main>
+
+<Footer />
