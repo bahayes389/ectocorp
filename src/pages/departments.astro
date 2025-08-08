@@ -7,61 +7,22 @@ import Footer from '../components/Footer.astro';
 <BaseHead />
 <Header />
 
-<!-- Retro News Ticker -->
-<div style="background-color: #000080; color: white; padding: 5px 0; font-size: 14px; font-family: 'Arial', sans-serif; white-space: nowrap; overflow: hidden;">
-  <marquee behavior="scroll" direction="left" scrollamount="4">
-    📢 [1999∞] EctoCorp assures all associates that productivity remains at optimal levels — 
-    🚨 Reminder: Unauthorized messaging is a Class-2 Violation — 
-    📞 Report suspicious communications to 9966 immediately — 
-    📰 New morale posters available in all approved break areas — 
-    ⏰ All clocks inspected and functioning as scheduled —
-  </marquee>
-</div>
-
 <main class="container">
-  <h2>Broadcast & Messaging Bureau</h2>
+  <h1>Departments of EctoCorp</h1>
+  <p>Below is the current directory of approved EctoCorp departments. Access to some divisions may require additional clearance.</p>
 
-  <div style="background-color: #fff8c6; border: 1px solid #999; padding: 10px; margin-bottom: 20px; font-size: 14px;">
-    ⚠️ Access to restricted messaging channels without clearance is a violation of Section 4-C of the Public Communications Guide.
-  </div>
-
-  <form style="margin-bottom: 20px;">
-    <label for="message-search"><b>Search Public Bulletin Archive:</b></label><br />
-    <input type="text" id="message-search" name="message-search" placeholder="Enter keyword..." size="30" disabled style="margin-top: 5px;">
-    <p style="font-size: 10px; color: gray;">* Archive search is temporarily offline for content alignment review.</p>
-  </form>
-
-  <p>
-    The Broadcast & Messaging Bureau ensures all communications — from company news to public service announcements — meet EctoCorp’s standards for morale, compliance, and accuracy.
-    Every poster, newswire, and public statement passes through our desks before reaching Associates.
-  </p>
-
-  <p><b>Department Head:</b> Director of Broadcast & Messaging</p>
-
-  <p><b>Key Responsibilities:</b></p>
   <ul>
-    <li>Review and approve all public communications</li>
-    <li>Manage the Authorized Morale Library (AML)</li>
-    <li>Oversee Emergency Broadcast Procedures</li>
-    <li>Monitor for unauthorized or non-compliant messaging</li>
+    <li><a href="/departments/hr">Human Resources</a> — Legislative functions, employee policies, and conduct standards.</li>
+    <li><a href="/departments/legal">The Legal Department</a> — Judicial oversight, corporate law, and dispute resolution.</li>
+    <li><a href="/departments/ced">Compliance Enforcement Division (CED)</a> — Policing, compliance enforcement, and public order.</li>
+    <li><a href="/departments/bmb">Broadcast & Messaging Bureau</a> — Official communications, news, and morale messaging.</li>
+    <li><a href="/departments/nutrition">Consumer Nutritional Division</a> — State-controlled food production and distribution.</li>
+    <li><a href="/departments/housing">Infrastructure & Housing Authority</a> — Public housing, utilities, and infrastructure maintenance.</li>
+    <li><a href="/departments/external">Department of External Affairs</a> — Foreign relations and cross-border corporate communications.</li>
+    <li><a href="/departments/productivity">Human Productivity Division</a> — Workforce output, safety, and operational efficiency.</li>
   </ul>
 
-  <p style="margin-top: 20px; font-size: 12px; color: gray;">
-    Last reviewed: 1999.4.2 · All messaging is monitored for quality and tone.
-  </p>
-
-  <hr />
-  <p><b>Navigate to Other Departments:</b></p>
-  <ul>
-    <li><a href="/departments/hr">Human Resources</a></li>
-    <li><a href="/departments/legal">The Legal Department</a></li>
-    <li><a href="/departments/temporal">Department of Temporal Investigations</a></li>
-    <li><a href="/departments/nutrition">Consumer Nutritional Division</a></li>
-    <li><a href="/departments/housing">Infrastructure & Housing Authority</a></li>
-    <li><a href="/departments/external">Department of External Affairs</a></li>
-    <li><a href="/departments/productivity">Human Productivity Division</a></li>
-    <li><a href="/departments/ced">Compliance Enforcement Division</a></li>
-  </ul>
+  <p style="font-size: 12px; color: gray;">List last verified: 1999.4.2 — Any missing departments are either classified or under compliance review.</p>
 </main>
 
 <Footer />
