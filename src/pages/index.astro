@@ -2,66 +2,99 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>EctoCorp – Official Site</title>
-    <link rel="stylesheet" href="/styles/main.css" />
-  </head>
-  <body bgcolor="#ffffff" text="#000000" link="#0000ee" vlink="#551a8b" alink="#ff0000">
-    <center>
-      <img src="/assets/logo.gif" alt="EctoCorp Logo" width="300" />
-      <h1>
-        <marquee behavior="scroll" direction="left">
-          Welcome to EctoCorp™ | Serving Your Future Since 1999.∞
-        </marquee>
-      </h1>
-    </center>
+<BaseHead />
+<Header />
 
-    <table width="900" align="center" border="1" cellspacing="0" cellpadding="10">
-      <tr>
-        <!-- Sidebar Navigation -->
-        <td width="200" valign="top" bgcolor="#dcdcdc">
-          <font face="Verdana, Arial" size="2">
-            <b>Navigation</b><br />
-            <hr />
-            <a href="/">Home</a><br />
-            <a href="/products">Product Catalog</a><br />
-            <a href="/departments">Departments</a><br />
-            <a href="/news">EctoCorp News</a><br />
-            <a href="/careers">Join Our Team</a><br />
-            <a href="/compliance">Compliance</a><br />
-            <a href="/contact">Contact Us</a><br />
-          </font>
-        </td>
+<main class="container" style="max-width: 860px; margin: 0 auto; font-family: Verdana, Arial, sans-serif;">
 
-        <!-- Main Content -->
-        <td valign="top">
-          <font face="Verdana, Arial" size="2">
-            <h2>About EctoCorp</h2>
-            <p>
-              EctoCorp is your trusted provider of post-Y2K solutions. From nutrition units to digital governance,
-              we are committed to bringing you perpetual innovation — even if the clock never strikes midnight.
-            </p>
-            <h3>Featured Announcement:</h3>
-            <ul>
-              <li><b>New Meal Units Available</b> – Now with government-approved flavoring</li>
-              <li><b>Compliance Reminder</b> – All citizens must update ID badges before 1999.4</li>
-              <li><b>Department of Temporal Investigations</b> – Welcoming new recruits</li>
-            </ul>
-          </font>
-        </td>
-      </tr>
-    </table>
+  <!-- Ticker -->
+  <div style="margin-top: 10px; border: 1px solid #999;">
+    <marquee behavior="scroll" direction="left" scrollamount="3" style="background-color:#003366; color:#fff; padding:6px; font-size:12px;">
+      Official Bulletin: Productivity remains stable across all sectors · Reminder: Carry your Associate ID at all times · Report non-compliant behavior to 9966 · Curfew hours 22:00–05:00 remain in effect · CED dispatch line: 1911
+    </marquee>
+  </div>
 
-    <center>
-      <font face="Courier New" size="1">
-        <p>© EctoCorp™ 1999.∞ | All Rights Reserved | Do Not Question the Time</p>
-      </font>
-    </center>
-  </body>
-</html>
+  <!-- Hero Panel -->
+  <section style="border:2px solid #888; background:#FFF8C6; padding:16px; margin:20px 0;">
+    <h2 style="margin:0 0 6px 0; color:#003366;">Welcome to the EctoCorp Intranet</h2>
+    <p style="margin:0; font-size:12px; color:#444;">For Authorized Personnel Only · Fiscal Year 1999∞</p>
+    <p style="margin-top:10px;">
+      This portal provides approved access to department directories, news bulletins, and reference materials.
+      Please review current notices and proceed to your assigned resources.
+    </p>
+  </section>
+
+  <!-- Quick Links -->
+  <section style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-bottom:24px;">
+    <div style="border:1px solid #bbb; padding:12px; background:#f3f3f3;">
+      <h3 style="margin:0 0 8px 0; color:#003366; font-size:16px;">Quick Access</h3>
+      <ul style="margin:0; padding-left:16px; line-height:1.8;">
+        <li><a href="/departments">Departments Directory</a></li>
+        <li><a href="/news">Newswire Bulletins</a></li>
+        <li><a href="/products">Product Catalog</a></li>
+        <li><a href="/handbooks">Associate Handbooks</a></li>
+      </ul>
+    </div>
+
+    <div style="border:1px solid #bbb; padding:12px; background:#f3f3f3;">
+      <h3 style="margin:0 0 8px 0; color:#003366; font-size:16px;">Important Numbers</h3>
+      <ul style="margin:0; padding-left:16px; line-height:1.8;">
+        <li>Compliance Enforcement Dispatch: <b>1911</b></li>
+        <li>Integrity Reporting Hotline: <b>9966</b></li>
+        <li>Emergency Health Line: <b>1922</b></li>
+        <li>Messaging Compliance Line: <b>1977</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Departments Grid -->
+  <section style="margin-bottom:24px;">
+    <h3 style="margin:0 0 8px 0; color:#003366; font-size:16px;">Departments</h3>
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+      <a href="/departments/hr" style="display:block; border:1px solid #ccc; padding:10px; background:#fff;">Human Resources</a>
+      <a href="/departments/legal" style="display:block; border:1px solid #ccc; padding:10px; background:#fff;">The Legal Department</a>
+      <a href="/departments/ced" style="display:block; border:1px solid #ccc; padding:10px; background:#fff;">Compliance Enforcement Division</a>
+      <a href="/departments/bmb" style="display:block; border:1px solid #ccc; padding:10px; background:#fff;">Broadcast & Messaging Bureau</a>
+      <a href="/departments/nutrition" style="display:block; border:1px solid #ccc; padding:10px; background:#fff;">Consumer Nutritional Division</a>
+      <a href="/departments/housing" style="display:block; border:1px solid #ccc; padding:10px; background:#fff;">Infrastructure & Housing Authority</a>
+      <a href="/departments/external" style="display:block; border:1px solid #ccc; padding:10px; background:#fff;">Department of External Affairs</a>
+      <a href="/departments/productivity" style="display:block; border:1px solid #ccc; padding:10px; background:#fff;">Human Productivity Division</a>
+    </div>
+  </section>
+
+  <!-- News Teaser -->
+  <section style="border-top:1px solid #ccc; padding-top:14px; margin-bottom:24px;">
+    <h3 style="margin:0 0 8px 0; color:#003366; font-size:16px;">Latest Bulletins</h3>
+
+    <article style="margin-bottom:14px;">
+      <h4 style="margin:0; font-size:14px;"><a href="/news">Quarterly Productivity Reports Show Historic Stability</a></h4>
+      <p style="margin:4px 0 0 0; font-size:12px; color:#666;">Filed: 1999∞.6 · Broadcast & Messaging Bureau</p>
+    </article>
+
+    <article style="margin-bottom:14px;">
+      <h4 style="margin:0; font-size:14px;"><a href="/news">Public Conduct Handbook Updated</a></h4>
+      <p style="margin:4px 0 0 0; font-size:12px; color:#666;">Filed: 1999∞.5 · Human Resources</p>
+    </article>
+
+    <article>
+      <h4 style="margin:0; font-size:14px;"><a href="/news">New Compliance Monitors Installed in Sector 7</a></h4>
+      <p style="margin:4px 0 0 0; font-size:12px; color:#666;">Filed: 1999∞.5 · Compliance Enforcement Division</p>
+    </article>
+  </section>
+
+  <!-- Compliance Notice -->
+  <section style="border:1px solid #999; background:#fff; padding:12px; margin-bottom:30px;">
+    <p style="margin:0; font-size:12px; color:#333;">
+      Notice: Access to unlisted materials is prohibited. If you encounter broken links, unapproved postings, or unusual clock displays,
+      notify Compliance Enforcement at <b>1911</b>. Do not redistribute restricted addresses.
+    </p>
+  </section>
+
+  <p style="font-size:11px; color:#666; text-align:center;">
+    Logged: December 31, 1999∞ · Version: Public Intranet Home 1.0
+  </p>
+</main>
+
+<Footer />
