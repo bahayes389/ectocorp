@@ -1,44 +1,51 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
+<BaseHead />
 <!DOCTYPE html>
 <html lang="en">
-  <BaseHead />
-  <body>
-    <Header />
+  <body style="font-family: Verdana, Arial, sans-serif; background:#fff; color:#000;">
+    <main class="container" style="max-width:720px;margin:40px auto;text-align:center;">
+      <div style="border:2px solid #888; padding:18px; background:#FFF8C6;">
+        <h1 style="margin:0 0 6px 0; color:#003366;">Notice: Document Not Located</h1>
+        <p style="margin:0; font-size:12px; color:#444;">Reference Code: <b>1999∞.404</b></p>
+      </div>
 
-    <main class="container" style="text-align: center;">
-      <img src="/assets/logo.gif" alt="EctoCorp Logo" width="120" />
+      <div style="margin:22px 0;">
+        <p>
+          The page you requested is <b>not available in this sector</b> or has been
+          reassigned following a routine realignment of materials.
+        </p>
+        <p style="font-style:italic;">
+          “Thank you for your patience. Your cooperation sustains stability.”
+        </p>
+      </div>
 
-      <h1>Error 1999.404 – Page Not Found</h1>
+      <hr style="border:0;border-top:1px solid #999;">
 
-      <p>
-        The document you were attempting to access is not available in this timeline.<br />
-        It may have been reassigned, offboarded, or flagged for review by the Department of Temporal Investigations.
-      </p>
+      <div style="margin:16px 0;">
+        <p><b>What you can do:</b></p>
+        <ul style="list-style:none; padding:0; line-height:1.9;">
+          <li><a href="/">Return to Home</a></li>
+          <li><a href="/departments">Open Departments Directory</a></li>
+          <li><a href="/news">View Approved Bulletins</a></li>
+          <li><a href="/products">Browse Product Catalog</a></li>
+        </ul>
+      </div>
 
-      <blockquote>
-        <em>“This page does not exist in your assigned memory space.”</em>
-      </blockquote>
+      <div style="margin:20px auto; max-width:620px; text-align:left; background:#f3f3f3; border:1px solid #bbb; padding:10px;">
+        <p style="margin:0 0 6px 0; font-weight:bold;">Compliance Reminder</p>
+        <p style="margin:0; font-size:12px; color:#444;">
+          If you reached this page via an unlisted poster, flyer, or message,
+          please notify the Compliance Enforcement Division dispatch at <b>1911</b>.
+          Do not attempt to redistribute the link.
+        </p>
+      </div>
 
-      <p>
-        Please return to an approved page before escalation procedures are triggered.
-      </p>
-
-      <ul style="list-style-type: none; padding: 0;">
-        <li><a href="/">🏠 Return to Intranet Home</a></li>
-        <li><a href="/compliance">📄 Review Compliance Guidelines</a></li>
-        <li><a href="/products">📦 Visit the Product Catalog</a></li>
-      </ul>
-
-      <hr />
-
-      <p style="color: gray; font-size: 12px;">
-        Incident Code: <code>#ECTO-404-MIDNIGHT</code><br />
-        Logged and time-stamped for internal auditing.
+      <p style="margin-top:18px; font-size:11px; color:#666;">
+        Logged: December 31, 1999∞ · Incident ID: ECTO-404-REALIGN
       </p>
     </main>
 
